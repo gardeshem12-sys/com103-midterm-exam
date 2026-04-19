@@ -86,3 +86,15 @@ print(f"Project : {project_title}")
 print(f"Group   : {group_name}")
 print("------------------------------------------------")
 
+for i in range(len(assigned_tasks)):
+    task = assigned_tasks[i]
+    print(f"Task {i+1}: {task['task_name']:<25} [{task['task_hours']} hours]")
+    print(f"    Assigned to : {task['member_name']}")
+    print(f"    Status      : {task['status']}")
+    print(f"    Points      : {task['points']} / 2\n")
+
+print("------------------------------------------------")
+print(f"Total Points Earned   : {total_points} / {max_points}")
+print(f"Progress              : {int(progress)}%")
+print(f"Project Status        : {project_status}")
+print("================================================")
